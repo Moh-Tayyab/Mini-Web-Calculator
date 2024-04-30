@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Web Calculator</title>
+    <style>
+        .calculator {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+        h2 {
+            color: #c6f9c0;
+        }
+
+        .inputs p {
+            margin: 10px 0;
+        }
+        
+#add, #subtract, #multiply, #divide, #square, #squareRoot {
+    font-size: 1.6em; /* Adjust the size as needed */
+}
+
+/* 'Add' button larger */
+#add {
+    font-size: 2em; /* Larger font size for the 'Add' symbol */
+    padding: 20px 10px; 
+}
+
+.buttons button {
+    padding: 15px 10px;
+}
+
+
+        .inputs input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        /* Style the buttons */
+        .buttons button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Color the buttons */
+        #add { background-color: #28a745; }
+        #subtract { background-color: #dc3545; }
+        #multiply { background-color: #ffc107; }
+        #divide { background-color: #17a2b8; }
+        #square { background-color: #9821c0; }
+        #squareRoot { background-color: #007bff; }
+        #reset { background-color: #6c757d; }
+
+        /* Style the result area */
+        .result {
+            margin-top: 20px;
+        }
+
+        /* Style the output */
+        output {
+            font-size: 1.5em;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Web Mini Calculator</h1>
+        <h2>Created by M.Tayyab</h2>
+        <div class="inputs">
+            <p>Enter the 1st Number<input type="number" id="num1" placeholder="number1"></p>
+            <p>Enter the 2nd Number<input type="number" id="num2" placeholder="number2"></p>
+        </div>
+        <div class="buttons">
+            <button id="add">+</button>
+            <button id="subtract">−</button>
+            <button id="multiply">×</button>
+            <button id="divide">÷</button>
+            <button id="square">x²</button>
+            <button id="squareRoot">√x</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="result">
+            <h3>The Answer is: <output id="result"></output></h3>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
